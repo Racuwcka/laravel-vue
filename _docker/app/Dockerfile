@@ -25,4 +25,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 
 RUN composer dump-autoload --optimize
 
+COPY ./ /var/www
+
 WORKDIR /var/www/
