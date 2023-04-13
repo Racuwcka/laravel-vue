@@ -1,5 +1,5 @@
 FROM nginx:latest
 
-COPY ./_docker/nginx/conf.d /etc/nginx/conf.d
+COPY ./ /var/www/html
 
-COPY ./app /var/www/html
+COPY ./_docker/nginx/conf.d /etc/nginx/conf.d
